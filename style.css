@@ -51,6 +51,7 @@
   /* Neutral */
   --clr-grayish-blue: hsl(229, 8%, 60%);
   --clr-very-dark-blue: hsl(229, 31%, 21%);
+  --clr-very-soft-gray: hsl(0, 0%, 97%);
   --clr-white: hsl(0, 0%, 100%);
 }
 
@@ -137,6 +138,48 @@ img {
 /* ================== */
 /* Buttons & inputs */
 /* ================== */
+.open-nav-btn,
+.close-nav-btn {
+  background: none;
+  border: none;
+}
+
+.close-nav-btn {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--clr-soft-blue);
+  border: 2px solid var(--clr-soft-blue);
+  cursor: pointer;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.25px;
+  color: var(--clr-white);
+  padding: 0.75em 1.25em;
+  border-radius: 0.5em;
+  box-shadow: -1px 5px 12px 2px hsla(231, 69%, 60%, 0.4);
+}
+
+.btn--accent {
+  background-color: var(--clr-very-soft-gray);
+  border: 2px solid var(--clr-very-soft-gray);
+  color: var(--clr-very-dark-blue);
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--clr-white);
+  color: var(--clr-soft-blue);
+}
+
+.btn--accent:hover,
+.btn--accent:focus {
+  color: var(--clr-very-dark-blue);
+  border: 2px solid var(--clr-very-dark-blue);
+}
 
 /* ================== */
 /* SECTIONS */
