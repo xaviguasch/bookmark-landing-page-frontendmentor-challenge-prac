@@ -33,6 +33,7 @@
   --fs-24: 1.5rem;
   --fs-26: 1.625rem;
   --fs-28: 1.75rem;
+  --fs-30: 1.875em;
   --fs-32: 2rem;
   --fs-36: 2.25rem;
   --fs-40: 2.5rem;
@@ -55,11 +56,11 @@
 
 body {
   background-color: var(--clr-white);
-  color: var(--clr-very-dark-blue);
+  color: var(--clr-grayish-blue);
   font-family: var(--ff-main);
-  font-size: var(--fs-16);
+  font-size: var(--fs-15);
   font-weight: var(--fw-regular);
-  line-height: 1.5;
+  line-height: 1.666;
   text-align: center;
 }
 
@@ -70,6 +71,53 @@ img {
 
 /* ================== */
 /* Typography */
+/* ================== */
+.title {
+  font-size: var(--fs-30);
+  font-weight: var(--fw-medium);
+  line-height: 1.33;
+  color: var(--clr-very-dark-blue);
+}
+
+.title--md {
+  font-size: var(--fs-24);
+}
+
+.title--sm {
+  font-size: var(--fs-20);
+}
+
+.question {
+  color: var(--clr-very-dark-blue);
+}
+
+.answer {
+  line-height: 1.5;
+}
+
+.cta-message {
+  font-size: var(--fs-12);
+  letter-spacing: 4.62px;
+  /* color: var(--clr-white); */
+  text-transform: uppercase;
+  font-weight: var(--fw-medium);
+}
+
+.cta-title {
+  line-height: 1.1666;
+  /* color: var(--clr-white); */
+}
+
+/* ================== */
+/* Links */
+/* ================== */
+
+/* ================== */
+/* Buttons & inputs */
+/* ================== */
+
+/* ================== */
+/* SECTIONS */
 /* ================== */
 
 /*  */
