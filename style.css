@@ -112,6 +112,28 @@ img {
 /* Links */
 /* ================== */
 
+.nav-link {
+  /* color: var(--clr-white); */
+  font-size: var(--fs-20);
+  letter-spacing: 2.31px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+}
+
+.footer .nav-link {
+  font-size: var(--fs-15);
+  letter-spacing: 1.73px;
+}
+
+.footer .nav-link:hover,
+.footer .nav-link:focus {
+  color: var(--clr-soft-red);
+}
+
 /* ================== */
 /* Buttons & inputs */
 /* ================== */
