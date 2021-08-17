@@ -358,6 +358,55 @@ img {
   margin-top: 1em;
 }
 
+/* EXTENSIONS */
+.extensions {
+  margin-top: 5em;
+}
+
+.ext-copy p {
+  margin: 0.75em auto 0;
+  width: 90%;
+}
+
+.ext-cards {
+  margin-top: 2.5em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+
+  padding: 0 1em 0;
+}
+
+.card {
+  box-shadow: -2px 9px 9px 4px hsla(231, 69%, 60%, 0.2);
+  border-radius: 0.5em;
+}
+
+.card-logo img {
+  margin: 3em auto 0;
+}
+
+.card-upper .title {
+  margin-top: 2em;
+}
+
+.card-upper p {
+  margin-top: 0.5em;
+}
+
+.card-bottom {
+  margin-top: 2em;
+}
+
+.card-bottom .btn {
+  padding: 0.75em 2.35em;
+
+  margin: 1.5em 0;
+}
+
 /* ================== */
 /* ================== */
 /* ================== */
