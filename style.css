@@ -407,6 +407,49 @@ img {
   margin: 1.5em 0;
 }
 
+/* FAQ */
+.faq {
+  margin-top: 8.75em;
+}
+
+.faq-copy p {
+  margin-top: 1em;
+}
+
+.faq-questions {
+  margin-top: 4em;
+  text-align: left;
+}
+
+.faq-question-group {
+  border-bottom: 1px solid var(--clr-grayish-blue);
+  opacity: 0.75;
+}
+
+.question-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1em 0;
+}
+
+.q-top-text {
+  color: var(--clr-very-dark-blue);
+}
+
+.answer-text {
+  margin-bottom: 1.75em;
+  color: var(--clr-very-dark-blue);
+  opacity: 0.75;
+  display: none;
+}
+
+.faq .btn {
+  margin: 3em auto 0;
+  padding: 0.75em 1.75em;
+}
+
 /* ================== */
 /* ================== */
 /* ================== */
