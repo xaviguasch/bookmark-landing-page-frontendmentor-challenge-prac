@@ -51,6 +51,8 @@
   /* Neutral */
   --clr-grayish-blue: hsl(229, 8%, 60%);
   --clr-very-dark-blue: hsl(229, 31%, 21%);
+  --clr-faded-gray-placeholder: hsla(229, 31%, 21%, 0.219);
+
   --clr-very-soft-gray: hsl(0, 0%, 97%);
   --clr-white: hsl(0, 0%, 100%);
 }
@@ -450,34 +452,100 @@ img {
   padding: 0.75em 1.75em;
 }
 
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
+/* FOOTER */
+.footer {
+  margin-top: 7.75em;
+}
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
+.footer__cta {
+  background: var(--clr-soft-blue);
+}
+
+.cta-copy-area {
+  padding-top: 3.75em;
+}
+
+.cta-message,
+.title--cta {
+  color: var(--clr-white);
+}
+
+.title--cta {
+  margin-top: 0.5em;
+}
+
+.cta-form {
+  margin-top: 2em;
+  padding-bottom: 3.75em;
+}
+
+.input-cta,
+.btn-cta {
+  display: block;
+  width: 100%;
+  font-size: var(--fs-14);
+  font-family: inherit;
+  padding: 1em 1.75em;
+  border-radius: 0.5em;
+  border: none;
+}
+
+.input-cta {
+  color: var(--clr-faded-gray-placeholder);
+}
+
+.btn-cta {
+  margin-top: 1em;
+  background: var(--clr-soft-red);
+}
+
+/* Footer */
+.footer__bottom {
+  background: var(--clr-very-dark-blue);
+  padding: 2.75em 0 0.5em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .logo img {
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(166deg) brightness(100%)
+    contrast(101%);
+}
+
+.footer .nav-list {
+  margin-top: 2.375em;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.fl-group-b {
+  margin-top: 3em;
+}
+
+.fl-group-b .socials-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.footer__bottom .nav-link,
+.footer__signature {
+  margin-top: 3em;
+  color: var(--clr-white);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
