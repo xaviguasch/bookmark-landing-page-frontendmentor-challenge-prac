@@ -513,10 +513,13 @@ img {
   align-items: center;
 
   padding: 1em 0;
+
+  cursor: pointer;
 }
 
 .q-top-text {
   color: var(--clr-very-dark-blue);
+  width: 100%;
 }
 
 .answer-text {
@@ -524,6 +527,10 @@ img {
   color: var(--clr-very-dark-blue);
   opacity: 0.75;
   display: none;
+}
+
+.answer-text.show {
+  display: block;
 }
 
 .faq .btn {
