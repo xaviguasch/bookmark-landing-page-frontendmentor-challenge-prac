@@ -366,6 +366,7 @@ img {
   opacity: 0.75;
   font-size: var(--fs-16);
   padding: 1.25em 0;
+  cursor: pointer;
 
   position: relative;
 }

@@ -3,7 +3,14 @@ const openBtn = document.querySelector('.open-nav-btn')
 const nav = document.querySelector('.nav')
 const links = document.querySelectorAll('.nav a')
 
+const featBtns = document.querySelectorAll('.feat-btn')
+
 const questions = document.querySelectorAll('.question-top')
+const tabs = document.querySelectorAll('.tab')
+
+const bookmarkingFeat = document.querySelector('#bookmarking-feat')
+const searchingFeat = document.querySelector('#searching-feat')
+const sharingFeat = document.querySelector('#sharing-feat')
 
 const closeNavModal = () => {
   nav.classList.remove('navigation-open')
@@ -24,6 +31,25 @@ const showAnswer = (e) => {
   }
 }
 
+const showFeature = (e) => {
+  featBtns.forEach((featBtn) => {
+    featBtn.classList.remove('feat-btn--active')
+  })
+  e.target.classList.add('feat-btn--active')
+
+  tabs.forEach((tab) => {
+    tab.classList.remove('active')
+  })
+
+  if (e.target.id === 'bookmarking-btn') {
+    bookmarkingFeat.classList.add('active')
+  } else if (e.target.id === 'searching-btn') {
+    searchingFeat.classList.add('active')
+  } else if (e.target.id === 'sharing-btn') {
+    sharingFeat.classList.add('active')
+  }
+}
+
 closeBtn.addEventListener('click', closeNavModal)
 openBtn.addEventListener('click', openNavModal)
 
@@ -33,4 +59,8 @@ links.forEach((link) => {
 
 questions.forEach((q) => {
   q.addEventListener('click', showAnswer)
+})
+
+featBtns.forEach((featBtn) => {
+  featBtn.addEventListener('click', showFeature)
 })
