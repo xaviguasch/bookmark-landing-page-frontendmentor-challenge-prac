@@ -51,10 +51,12 @@
   /* Neutral */
   --clr-grayish-blue: hsl(229, 8%, 60%);
   --clr-very-dark-blue: hsl(229, 31%, 21%);
+  --clr-very-dark-blue-translucid: hsla(229, 31%, 21%, 0.9);
   --clr-faded-gray-placeholder: hsla(229, 31%, 21%, 0.219);
 
   --clr-very-soft-gray: hsl(0, 0%, 97%);
   --clr-white: hsl(0, 0%, 100%);
+  --clr-white-translucid: hsla(0, 0%, 100%, 0.15);
 }
 
 body {
@@ -116,7 +118,7 @@ img {
 /* ================== */
 
 .nav-link {
-  /* color: var(--clr-white); */
+  color: var(--clr-white);
   font-size: var(--fs-20);
   letter-spacing: 2.31px;
   text-transform: uppercase;
@@ -125,6 +127,7 @@ img {
 
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--clr-soft-red);
 }
 
 .footer .nav-link {
@@ -137,6 +140,11 @@ img {
   color: var(--clr-soft-red);
 }
 
+.social-link:hover path,
+.social-link:focus path {
+  fill: var(--clr-soft-red);
+}
+
 /* ================== */
 /* Buttons & inputs */
 /* ================== */
@@ -144,10 +152,8 @@ img {
 .close-nav-btn {
   background: none;
   border: none;
-}
 
-.close-nav-btn {
-  display: none;
+  cursor: pointer;
 }
 
 .btn {
@@ -215,7 +221,72 @@ img {
 }
 
 .nav {
-  display: none;
+  /* display: none; */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: var(--clr-very-dark-blue-translucid);
+  padding: 2.5em 2em 3em;
+
+  z-index: 10;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .nav__main {
+  width: 100%;
+}
+
+.nav .buttons-area {
+  padding-top: 0.25em;
+}
+
+.nav .nav-list {
+  margin-top: 2.5em;
+  list-style: none;
+  width: 100%;
+}
+
+.nav .nav-item {
+  border-top: 1px solid var(--clr-white-translucid);
+  padding: 1.5em 0 1.5em;
+
+  width: 100%;
+}
+
+.nav .nav-link {
+  width: 100%;
+  display: block;
+}
+
+.nav .nav-link--accent {
+  font-weight: var(--fw-medium);
+  padding: 0.25em 0 0.25em;
+  border: 2px solid var(--clr-white);
+  border-radius: 0.25em;
+}
+
+.nav .nav-link--accent:hover,
+.nav .nav-link--accent:focus {
+  border: 2px solid var(--clr-soft-red);
+}
+
+.nav .socials-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
 }
 
 /* HERO */

@@ -20,7 +20,7 @@
               <img src="./images/logo-bookmark.svg" alt="logo bookmark" />
             </div>
             <div class="buttons-area">
-              <button class="open-nav-btn">
+              <button aria-label="Open navigation" class="open-nav-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
                   <path
                     fill="#242A45"
@@ -29,31 +29,37 @@
                   />
                 </svg>
               </button>
-              <button class="close-nav-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
-                  <path
-                    fill="#FFF"
-                    fill-rule="evenodd"
-                    d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"
-                  />
-                </svg>
-              </button>
             </div>
           </div>
 
           <nav class="nav">
-            <div class="logo">
-              <img src="./images/logo-bookmark.svg" alt="logo bookmark" />
-            </div>
+            <div class="nav__main">
+              <div class="header__row">
+                <div class="logo">
+                  <img src="./images/logo-bookmark.svg" alt="logo bookmark" />
+                </div>
+                <div class="buttons-area">
+                  <button aria-label="Close navigation" class="close-nav-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
+                      <path
+                        fill="#FFF"
+                        fill-rule="evenodd"
+                        d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
 
-            <ul class="nav-list">
-              <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-              <li class="nav-item">
-                <a href="#" class="nav-link nav-link--accent">Login</a>
-              </li>
-            </ul>
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link nav-link--accent">Login</a>
+                </li>
+              </ul>
+            </div>
 
             <ul class="socials-list">
               <li>
