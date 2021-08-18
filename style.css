@@ -205,6 +205,10 @@ img {
   padding: 0 2em;
 }
 
+.buttons-area {
+  padding-top: 0.25em;
+}
+
 /* ================== */
 /* SECTIONS */
 /* ================== */
@@ -225,9 +229,13 @@ img {
 
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100%;
   right: 0;
   bottom: 0;
+
+  transform: translateX(0%);
+
+  width: 100%;
 
   background-color: var(--clr-very-dark-blue-translucid);
   padding: 2.5em 2em 3em;
@@ -242,12 +250,12 @@ img {
   align-items: center;
 }
 
-.nav .nav__main {
-  width: 100%;
+.navigation-open {
+  transform: translateX(-100%);
 }
 
-.nav .buttons-area {
-  padding-top: 0.25em;
+.nav .nav__main {
+  width: 100%;
 }
 
 .nav .nav-list {
