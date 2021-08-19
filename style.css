@@ -47,6 +47,7 @@
   /*Primary */
   --clr-soft-blue: hsl(231, 69%, 60%);
   --clr-soft-red: hsl(0, 94%, 66%);
+  --clr-soft-red-disabled: hsl(0, 85%, 79%);
 
   /* Neutral */
   --clr-grayish-blue: hsl(229, 8%, 60%);
@@ -632,6 +633,16 @@ img {
 .btn-cta {
   margin-top: 1em;
   background: var(--clr-soft-red);
+}
+
+.btn-cta:disabled,
+.btn-cta[disabled] {
+  background: var(--clr-soft-red-disabled);
+  cursor: not-allowed;
+}
+.btn-cta:disabled:hover,
+.btn-cta[disabled]:hover {
+  color: var(--clr-white);
 }
 
 /* Footer */

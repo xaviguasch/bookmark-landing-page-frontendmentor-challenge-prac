@@ -17,6 +17,9 @@ const form = document.querySelector('.cta-form')
 const inputMail = document.getElementById('input-mail')
 const formBtn = document.querySelector('.btn-cta')
 const regEx = /\S+@\S+\.\S+/
+const inputWrapper = document.querySelector('.input-wrapper')
+const iconErrorSvg = document.querySelector('.icon-error-svg')
+const errorMessage = document.querySelector('.error-message')
 
 const closeNavModal = () => {
   nav.classList.remove('navigation-open')
@@ -62,9 +65,16 @@ const showFeature = (e) => {
 
 const checkInput = () => {
   if (inputMail.value.trim() !== '' && regEx.test(inputMail.value)) {
-    console.log('nice email')
+    inputWrapper.classList.remove('show-error')
+    iconErrorSvg.classList.remove('show-error')
+    errorMessage.classList.remove('show-error')
+    formBtn.disabled = false
   } else {
-    console.log('doing it badly')
+    inputWrapper.classList.add('show-error')
+    iconErrorSvg.classList.add('show-error')
+    errorMessage.classList.add('show-error')
+
+    formBtn.disabled = true
   }
 }
 
@@ -85,4 +95,6 @@ featBtns.forEach((featBtn) => {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
+
+  checkInput()
 })
