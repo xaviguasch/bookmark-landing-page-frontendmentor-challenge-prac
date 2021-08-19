@@ -12,12 +12,22 @@ const bookmarkingFeat = document.querySelector('#bookmarking-feat')
 const searchingFeat = document.querySelector('#searching-feat')
 const sharingFeat = document.querySelector('#sharing-feat')
 
+// Form
+const form = document.querySelector('.cta-form')
+const inputMail = document.getElementById('input-mail')
+const formBtn = document.querySelector('.btn-cta')
+const regEx = /\S+@\S+\.\S+/
+
 const closeNavModal = () => {
   nav.classList.remove('navigation-open')
+
+  document.body.style.overflowY = 'scroll'
 }
 
 const openNavModal = () => {
   nav.classList.add('navigation-open')
+
+  document.body.style.overflowY = 'hidden'
 }
 
 const showAnswer = (e) => {
@@ -50,6 +60,14 @@ const showFeature = (e) => {
   }
 }
 
+const checkInput = () => {
+  if (inputMail.value.trim() !== '' && regEx.test(inputMail.value)) {
+    console.log('nice email')
+  } else {
+    console.log('doing it badly')
+  }
+}
+
 closeBtn.addEventListener('click', closeNavModal)
 openBtn.addEventListener('click', openNavModal)
 
@@ -63,4 +81,8 @@ questions.forEach((q) => {
 
 featBtns.forEach((featBtn) => {
   featBtn.addEventListener('click', showFeature)
+})
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
 })

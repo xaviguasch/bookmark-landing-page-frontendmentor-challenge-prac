@@ -315,12 +315,32 @@
           </div>
 
           <form action="#" class="cta-form">
-            <input
-              class="input-cta"
-              type="email"
-              placeholder="Enter your email address"
-            />
-            <button class="btn btn-cta">Contact Us</button>
+            <div class="input-wrapper">
+              <input
+                class="form-input-cta"
+                type="email"
+                name="email"
+                id="input-mail"
+                oninput="checkInput()"
+                placeholder="Enter your email address"
+              />
+              <div class="icon-error-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle cx="10" cy="10" r="10" fill="#FA5959" />
+                    <g fill="#FFF" transform="translate(9 5)">
+                      <rect width="2" height="7" rx="1" />
+                      <rect width="2" height="2" y="8" rx="1" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="error-message">
+                <p>Whoops, make sure it’s an email</p>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-cta">Contact Us</button>
           </form>
         </div>
         <div class="footer__bottom container">

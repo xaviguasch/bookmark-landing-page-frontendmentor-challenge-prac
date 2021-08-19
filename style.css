@@ -564,9 +564,21 @@ img {
 .cta-form {
   margin-top: 2em;
   padding-bottom: 3.75em;
+
+  position: relative;
 }
 
-.input-cta,
+.input-wrapper {
+  border: 2px solid transparent;
+  border-radius: 0.5em;
+}
+
+.input-wrapper.show-error {
+  background: var(--clr-soft-red);
+  border: 2px solid var(--clr-soft-red);
+}
+
+.form-input-cta,
 .btn-cta {
   display: block;
   width: 100%;
@@ -577,8 +589,44 @@ img {
   border: none;
 }
 
-.input-cta {
+.form-input-cta {
+  color: var(--clr-very-dark-blue);
+}
+
+.form-input-cta::placeholder {
   color: var(--clr-faded-gray-placeholder);
+}
+
+.icon-error-svg {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+
+  display: none;
+}
+
+.icon-error-svg.show-error {
+  display: block;
+}
+
+.error-message {
+  background: var(--clr-soft-red);
+
+  text-align: left;
+  padding: 0.1em 0.75em;
+  display: none;
+}
+
+.error-message.show-error {
+  display: block;
+}
+
+.error-message p {
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-10);
+  letter-spacing: 0.25px;
+  font-style: italic;
+  color: var(--clr-white);
 }
 
 .btn-cta {
