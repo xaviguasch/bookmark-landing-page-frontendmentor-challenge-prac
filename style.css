@@ -400,7 +400,7 @@ img {
   border-top-right-radius: 6em;
   border-bottom-right-radius: 6em;
   height: 203px;
-  width: 100%;
+  width: 200%;
   z-index: -1;
   /* Position */
   position: absolute;
