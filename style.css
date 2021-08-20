@@ -588,6 +588,7 @@ img {
   padding: 1em 1.75em;
   border-radius: 0.5em;
   border: none;
+  outline: none;
 }
 
 .form-input-cta {
@@ -864,6 +865,8 @@ img {
     margin-top: 11em;
   }
 
+  /* FEATURES */
+
   .feat-copy {
     max-width: 540px;
     padding: 0;
@@ -882,6 +885,7 @@ img {
   .feat-btn {
     display: block;
     width: 100%;
+    font-size: var(--fs-16);
   }
 
   .feat-btn:first-of-type {
@@ -900,9 +904,149 @@ img {
     transform: translateX(-50%);
   }
 
-  /* FEATURES */
+  .feat-display {
+    margin-top: 4.5em;
+  }
 
-  .feat-btn {
-    font-size: var(--fs-16);
+  .tab.active {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .sel-feat__ill-area {
+    width: 50%;
+    max-width: unset;
+  }
+
+  .tab--1 .sel-feat__ill-area {
+    padding-bottom: 2em;
+  }
+
+  .tab--1 .sel-feat__ill-area::after {
+    top: 18%;
+    height: 350px;
+  }
+
+  .sel-feat__ill-area img {
+    margin: 0 0 0 auto;
+  }
+
+  .sel-feat__copy-area {
+    margin-top: 0;
+    width: 50%;
+    padding: 3em 2.5em 0 6em;
+
+    text-align: left;
+  }
+
+  .tab--1 .sel-feat__copy-area {
+    margin-top: 0;
+  }
+
+  .sel-feat__copy-area p {
+    width: 100%;
+  }
+
+  /* EXTENSIONS */
+  .extensions {
+    margin-top: 9em;
+  }
+
+  .ext-copy {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .ext-copy p {
+    width: 100%;
+  }
+
+  .ext-cards {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .card:nth-of-type(2) {
+    margin-top: 4em;
+  }
+  .card:nth-of-type(3) {
+    margin-top: 8em;
+  }
+
+  /* FAQ */
+  .faq-copy,
+  .faq-questions {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .faq-questions {
+    margin-top: 3.5em;
+  }
+
+  /* FOOTER */
+  .cta-copy-area,
+  .cta-form {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .cta-form {
+    margin-top: 2.25em;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .cta-form .input-wrapper {
+    width: 65%;
+  }
+
+  .icon-error-svg {
+    position: absolute;
+    top: 14px;
+    right: unset;
+    left: 240px;
+
+    display: none;
+  }
+
+  .btn-cta {
+    margin-top: unset;
+    width: 35%;
+  }
+
+  .footer .footer__bottom {
+    padding: 2em 7em 0.5em;
+  }
+
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .fl-group-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+  }
+
+  .footer .nav-list {
+    flex-direction: row;
+    margin-top: unset;
+  }
+
+  .fl-group-b {
+    margin-top: unset;
+  }
+
+  .footer__signature {
+    margin-top: 2em;
   }
 }
